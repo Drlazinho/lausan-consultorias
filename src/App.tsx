@@ -9,9 +9,31 @@ import { Content } from './style';
 import LausanConsultoria from './pages/lausanConsultoria';
 import Imaginacao from './pages/imaginacao';
 import Perspectiva from './pages/perspectiva';
+import { FiMenu } from "react-icons/fi";
+import {useState, useEffect} from 'react'
 
 
 function App() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+      window.removeEventListener('resize', changeWidth)
+  }
+  }, [])
+
   return (
    <>
     <Router>
@@ -22,14 +44,20 @@ function App() {
           <h1>Lausan Consultoria</h1>
         </div>
 
-        <nav>
-          <Link to="/"><p>Nosso Trabalho</p></Link>
-          <Link to="/lausan-consultoria"><p>Lausan Consultoria</p></Link>
-          <Link to="/imaginacao"><p>Imaginação</p></Link>
-          <Link to="/perspectiva"><p>Perspectivas</p></Link>
-          <Link to="/objetivo"><p>Objetivos</p></Link>
-          <Link to="/contato"><p>Contato</p></Link>
-        </nav>
+        {(toggleMenu || screenWidth > 1000) && (
+          <ul>
+         <Link to="/"> <li>Nosso Trabalho</li></Link>
+          <Link to="/lausan-consultoria"><li>Lausan Consultoria</li></Link>
+          <Link to="/imaginacao"><li>Imaginação</li></Link>
+          <Link to="/perspectiva"><li>Perspectivas</li></Link>
+          <Link to="/objetivo"><li>Objetivos</li></Link>
+          <Link to="/contato"><li>Contato</li></Link>
+        </ul>
+
+        )}
+        
+        <button onClick={toggleNav} className="btn"><FiMenu/></button>
+
       </Content>
 
       <Routes>        

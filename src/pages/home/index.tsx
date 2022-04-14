@@ -4,10 +4,10 @@ import HomeBanner from '../../assets/img/homeBanner.jpg'
 export default function Home() {
   return (
     <Container>
-      <h1>
+      <h1 className='title'>
         DESENVOLVENDO MAIS VENDAS PARA A EMPRESA E FORTALECENDO A SUA MARCA
       </h1>
-      <img src={HomeBanner} alt="" />
+      <img src={HomeBanner} alt="Imagem de uma pessoa segurando um item que representa valorização de mercado" title='Imagem de uma pessoa segurando um item que representa valorização de mercado' />
 
       <Content>
 

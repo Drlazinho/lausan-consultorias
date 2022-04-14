@@ -11,6 +11,8 @@ export const Content = styled.div`
       max-width: 300px;
       max-height: 300px;
       object-fit: cover;
+      box-shadow: 1px 5px 8px 1px rgba(50, 50, 50, 0.61);
+
     }
 
     .text {
@@ -24,4 +26,12 @@ export const Content = styled.div`
       font-size: 20px;
     }
 
+    &:nth-child(odd){
+      background-color: #9cb7fc;
+    }
+
+ @media (max-width:1000px) {
+  flex-wrap: wrap;
+
+ }
 `;

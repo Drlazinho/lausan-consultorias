@@ -9,7 +9,7 @@ export default function LausanConsultoria() {
   return (
     <>
       <Content>
-        <img src={Lausan1} alt="" />
+        <img src={Lausan1} alt="Um homem desenhando um gráfico que representa aumento de vendas" title='Um homem desenhando um gráfico que representa aumento de vendas'/>
         <div className="text">
           <h2>O primeiro componente para o crescimento é a estratégia.</h2>
           <p>
@@ -26,7 +26,7 @@ export default function LausanConsultoria() {
         </div>
       </Content>
       <Content>
-        <img src={Lausan2} alt="" />
+        <img src={Lausan2} alt="A foto de um olhar para o futuro" title='A foto de um olhar para o futuro'/>
         <div className="text">
           <h2>Tenha um novo olhar direcionado para a sua empresa.</h2>
           <p>
@@ -37,7 +37,7 @@ se posicionar positivamente para continuar na linha de frente no seu segmento de
         </div>
       </Content>
       <Content>
-        <img src={Lausan3} alt="" />
+        <img src={Lausan3} alt="Uma fotografia que junta diversos fotos de diversas pessoas de diversas culturas e etnias" title='Uma fotografia que junta diversos fotos de diversas pessoas de diversas culturas e etnias'/>
         <div className="text">
           <h2>Talentos.</h2>
           <p>
@@ -50,7 +50,7 @@ se posicionar positivamente para continuar na linha de frente no seu segmento de
         </div>
       </Content>
       <Content>
-        <img src={Lausan4} alt="" />
+        <img src={Lausan4} alt="Foto de um homem branco  usando uma jaqueta azul apertando a mão de uma pessoa negra usando uma camisa branca de forma confiante" title='Foto de um homem branco  usando uma jaqueta azul apertando a mão de uma pessoa negra usando uma camisa branca de forma confiante' />
         <div className="text">
           <h2>Construa um relacionamento duradouro com o seu cliente.</h2>
           <p>

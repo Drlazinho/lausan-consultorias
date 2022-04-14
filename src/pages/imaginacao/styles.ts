@@ -7,9 +7,12 @@ export const Container = styled.div`
     align-items: center;
     gap: 1.5rem;
     
-  img{
-    width: 600px;
+    img{
+    width: 60%;
+    max-height: 400px;
     object-fit: cover;
+    box-shadow: 2px 5px 8px 0px rgba(50, 50, 50, 0.61);
+
   }
 
   .text{

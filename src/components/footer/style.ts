@@ -13,8 +13,8 @@ export const Container = styled.footer`
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
-
-    gap: 6rem;
+    flex-wrap: wrap;
+    gap: 5rem;
   }
   .emails{
     text-align: left;
@@ -45,6 +45,12 @@ export const Container = styled.footer`
 
     i{
       font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .emails{
+      font-size: .8rem;
     }
   }
 `;
