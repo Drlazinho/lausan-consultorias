@@ -20,6 +20,7 @@ export const Container = styled.div`
       text-align: center;
       font-weight: bold;
       font-size: 1.2rem;
+      margin-bottom: 1rem;
       }
 
       label{
