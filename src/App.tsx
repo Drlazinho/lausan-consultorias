@@ -40,18 +40,18 @@ function App() {
       <Content>
 
         <div className='title-logo'>
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" title='Logo Lausan Consultoria' />
           <h1>Lausan Consultoria</h1>
         </div>
 
         {(toggleMenu || screenWidth > 1000) && (
           <ul>
-         <Link to="/"> <li>Nosso Trabalho</li></Link>
-          <Link to="/lausan-consultoria"><li>Lausan Consultoria</li></Link>
-          <Link to="/imaginacao"><li>Imaginação</li></Link>
-          <Link to="/perspectiva"><li>Perspectivas</li></Link>
-          <Link to="/objetivo"><li>Objetivos</li></Link>
-          <Link to="/contato"><li>Contato</li></Link>
+         <Link to="/" title="Ir para a página sobre os trabalhos da Lausan Consultoria"> <li>Nosso Trabalho</li></Link>
+          <Link to="/lausan-consultoria" title='Ir para de detalhes da Lausan Consultoria'><li>Lausan Consultoria</li></Link>
+          <Link to="/imaginacao" title='Ir para a página de Imaginação da Lausan Consultoria'><li>Imaginação</li></Link>
+          <Link to="/perspectiva" title="Ir para a página de Perspectiva da Lausan Consultoria"><li>Perspectivas</li></Link>
+          <Link to="/objetivo" title="Ir para a página de Objetivos da Lausan Consultoria"><li>Objetivos</li></Link>
+          <Link to="/contato" title="Ir para a página de Contato da Lausan Consultoria"><li>Contato</li></Link>
         </ul>
 
         )}

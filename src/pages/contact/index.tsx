@@ -29,7 +29,7 @@ export default function Contact() {
         </fieldset>
       </form>
 
-      <img src={ContatoBanner} alt="" />
+      <img src={ContatoBanner} alt="Imagem representativa de contato" title="Imagem representativa de contato"/>
     </Container>
   )
 }

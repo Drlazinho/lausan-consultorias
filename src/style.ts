@@ -70,7 +70,6 @@ export const Content = styled.header`
 @media (max-width:1000px) {
   .title-logo{
     justify-content: start;
-    /* padding-right: 40px; */
     align-items: center;
 
       img{
@@ -98,7 +97,8 @@ export const Content = styled.header`
         border-top: 1px solid rgba(255, 255, 255, 0.555);
         text-align: center;
         margin-right: 0px;
-        padding: 20px 0;
+        padding: 10px 0;
+        font-size: 20px;
   }
   }
   .btn {

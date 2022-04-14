@@ -6,7 +6,7 @@ export default function Objetivo() {
   return (
     <Container>
       <h1>Objetivos</h1>
-      <img src={ObjetivoBanner} alt="" />
+      <img src={ObjetivoBanner} alt="Fotografia de um alvo de dados" title='Fotografia de um alvo de dados'/>
 
       <div className="text">
         <h2>Objetivos da empresa : como e porquê definir.</h2>

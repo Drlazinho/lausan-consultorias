@@ -7,7 +7,7 @@ export default function Perspectiva() {
   return (
 <Container>
       <h1>Perspectivas</h1>
-      <img src={PerspectivaBanner} alt="" />
+      <img src={PerspectivaBanner} alt="Fotografia de uma predio" title='Fotografia de uma predio' />
 
       <div className="text">
         <h2>

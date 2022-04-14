@@ -6,7 +6,7 @@ export default function Imaginacao() {
   return (
     <Container>
       <h1>Imaginação</h1>
-      <img src={ImaginacaoBanner} alt="" />
+      <img src={ImaginacaoBanner} alt="Imagem representativa, uma pessoa imaginando algo"  title='Imagem representativa, uma pessoa imaginando algo'/>
 
       <div className="text">
         <h2>
