@@ -12,6 +12,7 @@ export const Container = styled.div`
     max-height: 400px;
     object-fit: cover;
     box-shadow: 2px 5px 8px 0px rgba(50, 50, 50, 0.61);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 
   }
 
