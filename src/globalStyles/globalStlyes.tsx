@@ -8,5 +8,17 @@ export default createGlobalStyle`
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+
+    p{
+      font-size: 18px;
+    }
+
+    h2{
+      font-size: 25px;
+    }
+
+    ul{
+      font-size: 18px;
+    }
   }
 `;

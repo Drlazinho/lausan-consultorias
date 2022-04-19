@@ -1,21 +1,15 @@
 import styled from "styled-components";
-import HomeBanner from '../../assets/img/homeBanner.jpg'
+
 
 export const Container = styled.div`
   display:  flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 20px 7%;
 
   h1{
     margin: 1rem;
-  }
-
-  img{
-    width: 50%;
-    box-shadow: 1px 2px 8px 1px rgba(50, 50, 50, 0.61);
-
   }
 
   @media (max-width:1000px) {

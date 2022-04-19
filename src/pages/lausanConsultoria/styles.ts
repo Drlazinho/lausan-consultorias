@@ -4,7 +4,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-around;
     color: #002060;
-    padding: 2rem 3.2rem;
+    padding: 2rem 7%;
     gap: 2rem;
 
     img{
@@ -16,6 +16,7 @@ export const Content = styled.div`
     }
 
     .text {
+      width: 100%;
 
       h2{
         margin-bottom: 1rem;
@@ -28,6 +29,10 @@ export const Content = styled.div`
 
     &:nth-child(odd){
       background-color: #9cb7fc;
+      animation: go-left 1s;
+    }
+    &:nth-child(even){
+      animation: go-right 1s;
     }
 
  @media (max-width:1000px) {

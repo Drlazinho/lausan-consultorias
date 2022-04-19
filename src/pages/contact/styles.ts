@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 1rem;
 
   form{
+    animation: go-left 1s;
     width: 40%;
     
     fieldset{
@@ -54,6 +55,7 @@ export const Container = styled.div`
   }
 
   img{
+    animation: go-right 1s;
     margin: auto 0;
     height: 40%;
     width: 40%;
@@ -69,5 +71,28 @@ export const Container = styled.div`
     form{
       width: 90%;
     }
+  }
+
+
+  @keyframes go-left {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  }
+
+  @keyframes go-right {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
   }
 `;

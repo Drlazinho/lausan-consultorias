@@ -7,7 +7,7 @@ export const Content = styled.header`
   flex-direction: column;
   padding: 1.2rem;
   margin-bottom: 1.2rem;
-  width: 100vw;
+  width: 100%;
 
   .title-logo{
     display: flex;
