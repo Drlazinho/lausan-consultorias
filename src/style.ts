@@ -32,18 +32,17 @@ export const Content = styled.header`
     justify-content: space-around;
     color: #fff;
     text-decoration: none;
-
-  
-    li{
-      color: #fff; 
-      font-size: 24px;
+    font-size: 24px;
       font-weight: bold;
       transition: .2s;
-    }
 
-    li:hover{
-      color: #ff7b00;
-    }
+    .link{
+    color: #fff;
+  }
+
+  .active{
+    color: #ff7b00;
+  }
   }
 
   .btn {
@@ -66,7 +65,6 @@ export const Content = styled.header`
     }
   }
 
-
 @media (max-width:1000px) {
   .title-logo{
     justify-content: start;
@@ -86,6 +84,10 @@ export const Content = styled.header`
   ul{
     flex-direction: column;
         height: auto;
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+        font-size: 20px;
 
     ul:nth-child(1){
       border-top: 1px solid rgba(255, 255, 255, 0.555);
@@ -93,12 +95,9 @@ export const Content = styled.header`
     }
 
     li{
-    width: 100%;
         border-top: 1px solid rgba(255, 255, 255, 0.555);
-        text-align: center;
-        margin-right: 0px;
         padding: 10px 0;
-        font-size: 20px;
+
   }
   }
   .btn {

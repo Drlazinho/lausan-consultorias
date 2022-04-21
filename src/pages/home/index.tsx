@@ -19,7 +19,7 @@ export default function Home() {
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
-        spaceBetween={50}
+        spaceBetween={1}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
